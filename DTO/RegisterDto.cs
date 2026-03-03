@@ -4,6 +4,8 @@ namespace Hospital_Management.DTO
 {
     public class RegisterDto
     {
+
+        public int Id { get; set; }
         [Required]
         public int RoleId { get; set; }
 
