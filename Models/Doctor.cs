@@ -1,28 +1,15 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace Hospital_Management.DTO
+﻿namespace Hospital_Management.Models
 {
-    public class PatientDto
+    public class Doctor
     {
-        
         public int Id { get; set; }
-
-       
         public string Name { get; set; }
-
-        
         public string Email { get; set; }
-
-        
         public string Gender { get; set; }
-
-        
         public string Phone { get; set; }
-
-        
         public string Address { get; set; }
-
-        public string Diseases { get; set; }
+        public string Specialization { get; set; }
         public DateTime Created { get; set; }
+
     }
 }

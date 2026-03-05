@@ -27,7 +27,7 @@ namespace Hospital_Management.Repositories
                 
                 parameter.Add("@name", patient.Name);
                 parameter.Add("@email", patient.Email);
-                parameter.Add("@password", BCrypt.Net.BCrypt.HashPassword(patient.Password));
+                //parameter.Add("@password", BCrypt.Net.BCrypt.HashPassword(patient.Password));
                 parameter.Add("@address", patient.Address);
                 parameter.Add("@phone", patient.Phone);
                 parameter.Add("@gender", patient.Gender);
