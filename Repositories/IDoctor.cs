@@ -6,7 +6,7 @@ namespace Hospital_Management.Repositories
     
     public interface IDoctor
     {
-        Task<int> AddDoctorAsync(Doctor doctor);
+        Task<int> AddDoctorAsync(Doctor doctordto);
         Task<string> UpdateDoctorAsync(Doctor doctor);
         Task<string> DeleteDoctorAsync(int id);
         Task<List<Doctor>> GetAllDoctorAsync();

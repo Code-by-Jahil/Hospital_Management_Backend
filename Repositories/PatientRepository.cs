@@ -62,10 +62,9 @@ namespace Hospital_Management.Repositories
                 parameter.Add("@name", patientDto.Name);
                 parameter.Add("@email", patientDto.Email);
                 parameter.Add("@address", patientDto.Address);
-                parameter.Add("@phone", patientDto.Phone);
                 parameter.Add("@gender", patientDto.Gender);
+                parameter.Add("@phone", patientDto.Phone);
                 parameter.Add("@diseases", patientDto.Diseases);
-
                 parameter.Add("@message", dbType: DbType.String, size: 200, direction: ParameterDirection.Output);
                 await connection.ExecuteAsync("sp_UpdatePatient", parameter, commandType: CommandType.StoredProcedure);
                 return parameter.Get<string>("@message");
